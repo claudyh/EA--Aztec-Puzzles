@@ -223,13 +223,13 @@ int main(){
             int desired= isDesiredMatrix(matrix, maxMoves, ri, re);
             if (desired == 1){
                 cout << 0 << endl;
-                break;
+                continue;
             }
 
             //Check if we have moves
             if (maxMoves == 0){
                 cout << "the treasure is lost!\n";
-                break;
+                continue;
             }
 
             //Calculate best moves
